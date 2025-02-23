@@ -1,0 +1,21 @@
+PUNTO 1
+fun filtrarMayores(personas: List<Pair<String, Int>>): List<Pair<String, Int>> {
+    return personas.filter { it.second >= 18 }
+}
+
+fun main() {
+    val personas: List<Pair<String, Int>> = listOf(
+        "Juan" to 17,
+        "Ana" to 19,
+        "Luis" to 16,
+        "Carlos" to 22,
+        "Sofia" to 18
+    )
+
+    val mayores = filtrarMayores(personas)
+
+    println("Personas mayores de edad:")
+    for ((nombre, edad) in mayores) {
+        println("$nombre tiene $edad años")
+    }
+}

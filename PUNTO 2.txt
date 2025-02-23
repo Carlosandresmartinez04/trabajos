@@ -1,0 +1,11 @@
+PUNTO 2
+fun calcularPromedio(numeros: List<Double>): Double {
+    return numeros.average() // el numers.average se usa para promediar los datos
+}
+
+fun main() { se usa //main(), y se define una lista de números y se asi se puede imprimir el promedio.
+    val listaNumeros = listOf(10.0, 20.0, 30.0, 40.0, 50.0)
+
+    val promedio = calcularPromedio(listaNumeros)
+    println("El promedio de la lista es: $promedio")
+}

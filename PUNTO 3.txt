@@ -1,0 +1,14 @@
+PUNTO 3
+fun esAscendente(lista: List<Int>): Boolean { //
+    return lista == lista.sorted()
+}
+// La función esAscendente compara la lista original con lista.sorted(), que la ordena en forma ascendente.
+fun main() {
+    val listaNumeros = listOf(1, 3, 5, 7, 9)
+    
+    if (esAscendente(listaNumeros)) {
+        println("La lista está en orden ascendente.")
+    } else {
+        println("La lista NO está en orden ascendente.")
+    }
+}
